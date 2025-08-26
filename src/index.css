@@ -8,3 +8,18 @@
 .card-body {
   background-color: rgb(221, 182, 124);
 }
+
+.bg-color-Jumbotron {
+  background-color: rgb(96, 222, 180);
+}
+
+h1,
+h3 {
+  font-family: "Nerko One", cursive;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
