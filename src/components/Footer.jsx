@@ -37,11 +37,7 @@ export default function Footer() {
                                     Viaggi di gruppo Dicembre
                                 </a>
                             </li>
-                            <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Dicembre
-                                </a>
-                            </li>
+
                         </ul>
                         <ul className="list-inline mt-2 d-flex flex-column p-3 ">
                             <h6><strong>Il Team</strong></h6>
