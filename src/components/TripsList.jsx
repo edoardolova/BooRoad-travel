@@ -5,7 +5,7 @@ export default function TripsList() {
         <>
             <section>
                 <div className="container">
-                    <h1 cla>TripsList</h1>
+                    <h1 className="p-2 mb-3">TripsList</h1>
                     <TripCard />
                 </div>
             </section>
