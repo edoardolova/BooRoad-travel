@@ -1,2 +1,10 @@
-@import 'bootstrap';
-@import 'bootstrap-icons';
+@import "bootstrap";
+@import "bootstrap-icons";
+
+.bg-color-trip-list {
+  background-color: rgb(188, 176, 145);
+}
+
+.card-body {
+  background-color: rgb(221, 182, 124);
+}

@@ -44,12 +44,12 @@ export default function TripCard() {
 
     return (
         <>
-            <section>
+            <section >
                 <div className="container">
-                    <div className="row row-cols-1 row-cols-md-3 g-3">
+                    <div className="row row-cols-1 row-cols-md-3 g-3 p-5 ">
                         {trips.map(trip => (
                             <div className="" key={trip.id}>
-                                <div className="card col h-100 w-100 ">
+                                <div className="card col h-100 w-100  ">
                                     <img
                                         className="card-img-top "
                                         src={trip.img}
