@@ -25,6 +25,9 @@ export default function TripCard() {
                                         <p>
                                             Partecipanti: {trip.participants.length}
                                         </p>
+                                        <p>
+                                            Descrizione:{trip.description}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
