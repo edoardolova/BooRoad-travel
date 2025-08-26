@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
 import TripDetails from './pages/TripDetails';
-import { TripProvider } from './contexts/TripContext.jsx'; 
+import { TripProvider } from './contexts/TripContext.jsx';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<HomePage />} />
-            <Route path='/api/trip-detail' element={<TripDetails />} />
+            <Route path='/trip/:tripId' element={<TripDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>
