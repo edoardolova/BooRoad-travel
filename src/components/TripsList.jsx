@@ -1,10 +1,14 @@
 import TripCard from "./TripCard";
 
-export default function TripsList(){
-    return(
+export default function TripsList() {
+    return (
         <>
-            <h1>TripsList</h1>
-            <TripCard/>
+            <section>
+                <div className="container">
+                    <h1 cla>TripsList</h1>
+                    <TripCard />
+                </div>
+            </section>
         </>
     )
 }
