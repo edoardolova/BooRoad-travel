@@ -1,48 +1,28 @@
+import ContactCard from "./ContactCard";
+
 export default function ContactsList({ participants }) {
+
     return (
         <>
-            <h2>
-                Partecipanti:
-            </h2>
-            <div className="container text-center">
-                <table className="table">
-                    <thead>
+            <div className="container">
+                <h3>
+                    Partecipanti:
+                </h3>
+                <div className="container horizontal-accordion">
+                    {participants && participants.length > 0 ? (
+                        participants.map((p, index) => (
+                            <>
+                                <ContactCard key={p.id} p={p} index={index} />
+                            </>
+                        ))
+                    ) : (
                         <tr>
-                            <th scope="col">
-                                #
-                            </th>
-                            <th scope="col">
-                                Nome
-                            </th>
-                            <th scope="col">
-                                Cognome
-                            </th>
+                            <td>
+                                Ancora nessun partecipante!
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {participants && participants.length > 0 ? (
-                            participants.map((p, index) => (
-                                <tr key={p.id}>
-                                    <th scope="row">
-                                        {index + 1}
-                                    </th>
-                                    <td>
-                                        {p.firstName}
-                                    </td>
-                                    <td>
-                                        {p.lastName}
-                                    </td>
-                                </tr>
-                            ))
-                        ) : (
-                            <tr>
-                                <td>
-                                    Ancora nessun partecipante!
-                                </td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
+                    )}
+                </div>
             </div>
         </>
     )

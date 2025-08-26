@@ -15,7 +15,7 @@ export default function TripDetails() {
 
     return (
         <>
-            <Jumbotron />
+            <Jumbotron img_url={trip.img} />
             {trip ? (
                 <div>
                     <TripDetailsCard trip={trip} />
