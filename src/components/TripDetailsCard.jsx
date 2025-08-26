@@ -2,7 +2,7 @@ export default function TripDetailsCard({ trip }) {
     return (
         <>
             {
-                <div className="container">
+                <div className="container my-4">
                     <h3>
                         Destinazione: {trip.destination}
                     </h3>
@@ -10,6 +10,7 @@ export default function TripDetailsCard({ trip }) {
                     <span>
                         Data di inizio: {trip.startDate}
                     </span>
+                    <br />
                     <span>
                         Data di fine: {trip.endDate}
                     </span>

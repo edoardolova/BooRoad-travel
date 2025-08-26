@@ -5,7 +5,7 @@ export default function ContactsList({ participants }) {
                 Partecipanti:
             </h2>
             <div className="container text-center">
-                <table class="table">
+                <table className="table">
                     <thead>
                         <tr>
                             <th scope="col">
@@ -21,10 +21,10 @@ export default function ContactsList({ participants }) {
                     </thead>
                     <tbody>
                         {participants && participants.length > 0 ? (
-                            participants.map((p) => (
+                            participants.map((p, index) => (
                                 <tr key={p.id}>
                                     <th scope="row">
-                                        {p.id}
+                                        {index + 1}
                                     </th>
                                     <td>
                                         {p.firstName}
