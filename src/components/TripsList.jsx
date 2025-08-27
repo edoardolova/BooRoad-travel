@@ -33,7 +33,7 @@ export default function TripsList() {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Cerca per destiazione..."
+                            placeholder="Cerca per destinazione..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
