@@ -27,3 +27,27 @@ p {
 a {
   text-decoration: none;
 }
+
+.trip-horizontal-card {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: none;
+}
+
+.btn-teal {
+  background-color: #18b89b;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border: none;
+}
+
+.btn-teal:hover {
+  background-color: #149e85;
+}
+
+.trip-date {
+  min-width: 60px;
+}

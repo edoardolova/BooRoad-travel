@@ -23,33 +23,46 @@ export default function TripsList() {
     setSortedOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   }
 
-  return (
-    <section className="bg-color-trip-list">
-      <div className="container">
-        {/* barra di ricerca */}
-        <div className="pt-5 d-flex gap-3 px-5">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Cerca per destinazione..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+    return (
+        <>
+            <section className="bg-color-trip-list">
+                <div className="container">
+                    <h1 className="p-4 mb-3">TripsList</h1>
+                    <div className="d-flex gap-3 mx-5">
 
-          <button
-            className="btn btn-outline-primary"
-            onClick={toggleSortOrder}
-          >
-            Ordina per data {sortedOrder === "asc" ? "↑" : "↓"}
-          </button>
-        </div>
+                        {/* barra di ricerca */}
+                        <input 
+                            type="text" 
+                            className="form-control"
+                            placeholder="Cerca per destiazione..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
 
-        <div className="row row-cols-1 row-cols-md-3 g-3 p-5 ">
-          {sortedTrips.map((trip) => (
-            <TripCard trip={trip} key={trip.id} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+                        {/* bottone toggle sorting  */}
+                        <button
+                            className="btn btn-outline-primary d-flex align-items-center gap-2"
+                            onClick={toggleSortOrder}
+                        >
+                            <i className="bi bi-calendar-event"></i>
+                            {sortedOrder === 'asc' ? (
+                                <i className="bi bi-arrow-up"></i>
+                            ) : (
+                                <i className="bi bi-arrow-down"></i>
+                            )}
+                        </button>
+                    </div>
+                    <div className="row row-cols-1 row-cols-md-3 g-3 p-5 ">
+                        {
+                            sortedTrips.map(trip => {
+                                return (
+                                    <TripCard trip={trip} key={trip.id} />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            </section>
+        </>
+    )
 }
