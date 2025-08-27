@@ -10,7 +10,7 @@ export default function TripsList() {
         <>
             <section className="bg-color-trip-list">
                 <div className="container">
-                    <h1 className="p-4 mb-3">TripsList</h1>
+
                     <div className="row row-cols-1 row-cols-md-3 g-3 p-5 ">
                         {
                             trips.map(trip => {
