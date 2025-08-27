@@ -51,3 +51,10 @@ a {
 .trip-date {
   min-width: 60px;
 }
+
+.signup-closed {
+  background-color: orange;
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
