@@ -29,7 +29,7 @@ export default function ContactCard({ p, index }) {
                             id={uniqueId}
                             className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
-                                <table class="table">
+                                <table className="table">
                                     <thead>
                                         <tr>
                                             <th scope="col">

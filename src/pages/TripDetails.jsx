@@ -14,7 +14,7 @@ export default function TripDetails() {
     const participants = getParticipantsByTripId(trip?.id);
 
     return (
-        <>
+        <main className="pt-5">
             <Jumbotron img_url={trip.img} />
             {trip ? (
                 <div>
@@ -26,6 +26,6 @@ export default function TripDetails() {
                     Viaggio non trovato
                 </p>
             )}
-        </>
+        </main>
     )
 }

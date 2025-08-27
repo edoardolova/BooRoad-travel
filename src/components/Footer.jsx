@@ -99,22 +99,22 @@ export default function Footer() {
                             <h6><strong>SEGUICI!</strong></h6>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    <i class="bi bi-instagram"></i>
+                                    <i className="bi bi-instagram"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    <i class="bi bi-facebook"></i>
+                                    <i className="bi bi-facebook"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    <i class="bi bi-whatsapp"></i>
+                                    <i className="bi bi-whatsapp"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    <i class="bi bi-discord"></i>
+                                    <i className="bi bi-discord"></i>
                                 </a>
                             </li>
                         </ul>
