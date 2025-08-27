@@ -2,7 +2,7 @@
 @import "bootstrap-icons";
 
 .bg-color-trip-list {
-  background-color: rgb(216, 214, 212);
+  background-color: rgb(174, 151, 127);
 }
 
 .card-body {
@@ -29,6 +29,31 @@ a {
   text-decoration: none;
 }
 
+
 .logo-img{
   width: 70px;
+}
+
+.trip-horizontal-card {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: none;
+}
+
+.btn-teal {
+  background-color: #18b89b;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border: none;
+}
+
+.btn-teal:hover {
+  background-color: #149e85;
+}
+
+.trip-date {
+  min-width: 60px;
 }
