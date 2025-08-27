@@ -25,7 +25,7 @@ export default function TripsList() {
 
     return (
         <>
-            <section className="pt-4 bg-color-trip-list">
+            <section className="pt-4 ">
                 <div className="container">
                     <div className="d-flex gap-3 mx-5">
 

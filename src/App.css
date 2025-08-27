@@ -1,0 +1,11 @@
+#root {
+  display: flex;
+  flex-direction: column;  
+  min-height: 100vh;  
+  margin: 0;  
+}
+
+/* cambiare questo per il colore di sfondo  */
+body{
+  background-color: #EEF1F4;
+}
