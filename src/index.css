@@ -16,11 +16,14 @@
 h1,
 h2,
 h3 {
-  font-family: "TASA EXPLORER", SAN-SEFIR;
+  font-family: "Tasa Explorer", sans-serif;
   font-weight: bold;
 }
 
-p {
+p,
+span,
+a,
+b {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -30,7 +33,7 @@ a {
 }
 
 
-.logo-img{
+.logo-img {
   width: 70px;
 }
 
@@ -72,6 +75,18 @@ a {
 .tripDetailsTable {
   margin-top: 2rem;
   display: flex;
+  min-height: 200px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 0 5px 2px #d6d6da81;
+}
+
+.participantsTable {
+  margin-top: 2rem;
   min-height: 200px;
   padding-top: 1rem;
   padding-bottom: 1rem;
