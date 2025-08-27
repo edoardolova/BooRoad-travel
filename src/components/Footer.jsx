@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <footer className="bg-primary text-white text-center py-4 mt-auto">
+            <footer className="footer text-white text-center py-4 mt-auto">
                 <div className="container">
                     <p className="mb-0">&copy; {new Date().getFullYear()} BoolRoad</p>
                     <div className="d-flex justify-content-md-center">
@@ -9,32 +9,32 @@ export default function Footer() {
                             <h6><strong>Programma Viaggi!</strong></h6>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Luglio
+                                    Viaggi per Napoli
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Last Minute: Viaggi di gruppo Agosto
+                                    Viaggi per Milano
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Settembre
+                                    Viaggi per Firenze
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Ottobre
+                                    Viaggi per Torino
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Novembre
+                                    Viaggi per Roma
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
                                 <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi di gruppo Dicembre
+                                    Viaggi last Minute
                                 </a>
                             </li>
 

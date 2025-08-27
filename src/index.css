@@ -144,3 +144,19 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+
+footer {
+
+  background-color: #314782;
+}
+
+.borderH {
+  border-bottom: solid 1px #314782;
+}
+
+main {
+  background-image: url(../public/premium_photo-1719843013775-1a101dd75b37.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

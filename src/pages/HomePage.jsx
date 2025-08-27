@@ -10,7 +10,7 @@ export default function HomePage() {
   const [showParticipantForm, setShowParticipantForm] = useState(false);
 
   return (
-    <main className="pt-5">
+    <main className="pt-5 mt-5">
       {/* <section className="bg-color-homeJumbotron">
         <Jumbotron
           className="bg-color-homeJumbotron"
