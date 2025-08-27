@@ -17,9 +17,13 @@ export default function TripDetails() {
         <main className="pt-5">
             <Jumbotron img_url={trip.img} />
             {trip ? (
-                <div>
-                    <TripDetailsCard trip={trip} />
-                    <ContactsList participants={participants} />
+                <div className="container">
+                    <section className="trip-details">
+                        <TripDetailsCard trip={trip} />
+                    </section>
+                    <section className="participants">
+                        <ContactsList participants={participants} />
+                    </section>
                 </div>
             ) : (
                 <p>
