@@ -8,33 +8,28 @@ export default function Footer() {
                         <ul className="list-inline mt-2 d-flex flex-column p-3 ">
                             <h6><strong>Programma Viaggi!</strong></h6>
                             <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
+                                <a href="/trip/4" className="text-white text-decoration-none">
                                     Viaggi per Napoli
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
+                                <a href="/trip/2" className="text-white text-decoration-none">
                                     Viaggi per Milano
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
+                                <a href="/trip/3" className="text-white text-decoration-none">
                                     Viaggi per Firenze
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
+                                <a href="/trip/5" className="text-white text-decoration-none">
                                     Viaggi per Torino
                                 </a>
                             </li>
                             <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
+                                <a href="/trip/1" className="text-white text-decoration-none">
                                     Viaggi per Roma
-                                </a>
-                            </li>
-                            <li className="list-inline-item p-2">
-                                <a href="/privacy" className="text-white text-decoration-none">
-                                    Viaggi last Minute
                                 </a>
                             </li>
 
