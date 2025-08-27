@@ -3,36 +3,35 @@ import { TripContext } from "../contexts/TripContext";
 import { useContext, useState } from "react";
 
 export default function TripsList() {
-  const { trips } = useContext(TripContext);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [sortedOrder, setSortedOrder] = useState("asc");
+    const { trips } = useContext(TripContext);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [sortedOrder, setSortedOrder] = useState("asc");
 
-  // filtro per destinazione
-  const filteredTrips = trips.filter((trip) =>
-    trip.destination.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    // filtro per destinazione
+    const filteredTrips = trips.filter((trip) =>
+        trip.destination.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-  // ordino per data
-  const sortedTrips = [...filteredTrips].sort((a, b) => {
-    const dateA = new Date(a.startDate);
-    const dateB = new Date(b.startDate);
-    return sortedOrder === "asc" ? dateA - dateB : dateB - dateA;
-  });
+    // ordino per data
+    const sortedTrips = [...filteredTrips].sort((a, b) => {
+        const dateA = new Date(a.startDate);
+        const dateB = new Date(b.startDate);
+        return sortedOrder === "asc" ? dateA - dateB : dateB - dateA;
+    });
 
-  function toggleSortOrder() {
-    setSortedOrder((prev) => (prev === "asc" ? "desc" : "asc"));
-  }
+    function toggleSortOrder() {
+        setSortedOrder((prev) => (prev === "asc" ? "desc" : "asc"));
+    }
 
     return (
         <>
-            <section className="bg-color-trip-list">
+            <section className="pt-4 bg-color-trip-list">
                 <div className="container">
-                    <h1 className="p-4 mb-3">TripsList</h1>
                     <div className="d-flex gap-3 mx-5">
 
                         {/* barra di ricerca */}
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             className="form-control"
                             placeholder="Cerca per destiazione..."
                             value={searchTerm}

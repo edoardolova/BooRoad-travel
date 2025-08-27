@@ -6,14 +6,61 @@ export default function ContactCard({ p, index }) {
         <>
             <div className="accordion-item">
                 <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#${uniqueId}`} aria-expanded="false" aria-controls={uniqueId}>
-                        <div className="me-3">
-                            <b>
-                                {index + 1}
-                            </b>
-                        </div>
-                        <div>
-                            {`${p.firstName} ${p.lastName}`}
+                    <button className="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target={`#${uniqueId}`} aria-expanded="false" aria-controls={uniqueId}>
+                        <div className="row justify-content-around">
+                            <div className="col-3 d-flex align-items-center">
+                                <div className="me-3">
+                                    <b>
+                                        {index + 1}
+                                    </b>
+                                </div>
+                                <div>
+                                    {`${p.firstName} ${p.lastName}`}
+                                </div>
+                            </div>
+                            <div className="tags col d-flex gap-2">
+                                {
+                                    p.tag.map((item) => {
+                                        if (item === "ID OK") {
+                                            return (
+                                                <div className="tagID_OK">
+                                                    {item}
+                                                </div>
+                                            )
+                                        } else if (item === "<18") {
+                                            return (
+                                                <div className="tagMin18">
+                                                    {item}
+                                                </div>
+                                            )
+                                        } else if (item === "No glutine") {
+                                            return (
+                                                <div className="tagGlutenFree">
+                                                    {item}
+                                                </div>
+                                            )
+                                        } else if (item === "Problemi motori") {
+                                            return (
+                                                <div className="tagDisabled">
+                                                    {item}
+                                                </div>
+                                            )
+                                        } else if (item === "Cliente Premium") {
+                                            return (
+                                                <div className="tagPremium">
+                                                    {item}
+                                                </div>
+                                            )
+                                        } else if (item === "In attesa ID") {
+                                            return (
+                                                <div className="tagCheckID">
+                                                    {item}
+                                                </div>
+                                            )
+                                        }
+                                    })
+                                }
+                            </div>
                         </div>
                     </button>
                 </h2>

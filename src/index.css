@@ -68,6 +68,48 @@ a {
   width: fit-content;
 }
 
+.tagID_OK {
+  background-color: rgba(0, 255, 8, 0.61);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+.tagMin18 {
+  background-color: rgb(225, 255, 0);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+.tagGlutenFree {
+  background-color: rgb(238, 180, 43);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+.tagDisabled {
+  background-color: rgba(20, 177, 255, 0.511);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+.tagPremium {
+  background-color: rgba(247, 20, 255, 0.584);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+.tagCheckID {
+  background-color: rgba(255, 141, 20, 0.584);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+
 .trip-details {
   margin-top: 3rem;
 }
