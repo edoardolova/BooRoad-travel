@@ -3,7 +3,7 @@ export default function Footer() {
         <>
             <footer className="footer text-white text-center py-4 mt-auto">
                 <div className="container">
-                    <p className="mb-0">&copy; {new Date().getFullYear()} BoolRoad</p>
+                    <p className="mb-0">&copy; {new Date().getFullYear()} BooRoadTravel</p>
                     <div className="d-flex justify-content-md-center">
                         <ul className="list-inline mt-2 d-flex flex-column p-3 ">
                             <h6><strong>Programma Viaggi!</strong></h6>
