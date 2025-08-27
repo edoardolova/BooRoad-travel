@@ -7,6 +7,7 @@ export default function TripCard({ trip }) {
                 <div className="container">
                     <div className="" key={trip.id}>
                         <div className="card col ">
+                            <h3 className="p-1 ">{trip.destination}</h3>
                             <img
                                 className="card-img-top "
                                 src={trip.img}
@@ -14,7 +15,6 @@ export default function TripCard({ trip }) {
                                 style={{ height: "250px", objectFit: "cover" }}
                             />
                             <div className="card-body">
-                                <h3>{trip.destination}</h3>
                                 <p>
                                     Dal {trip.startDate} al {trip.endDate}
                                 </p>
