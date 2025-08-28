@@ -115,6 +115,7 @@ a {
 }
 
 .tripDetailsTable {
+  background-color: white;
   margin-top: 2rem;
   display: flex;
   min-height: 200px;
@@ -128,8 +129,8 @@ a {
 }
 
 .participantsTable {
+  background-color: white;
   margin-top: 2rem;
-  min-height: 200px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: .5rem;
@@ -142,4 +143,20 @@ a {
 .participants {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+
+footer {
+
+  background-color: #314782;
+}
+
+.borderH {
+  border-bottom: solid 1px #314782;
+}
+
+main {
+  background-image: url(../public/premium_photo-1719843013775-1a101dd75b37.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
