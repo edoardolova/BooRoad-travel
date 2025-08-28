@@ -62,7 +62,7 @@ export default function ContactsList({ participants }) {
                     ) : (
                         <tr>
                             <td>
-                                Ancora nessun partecipante!
+                                Nessun partecipante!
                             </td>
                         </tr>
                     )}

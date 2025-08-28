@@ -7,7 +7,7 @@ export default function ContactCard({ p, index }) {
             <div className="accordion-item">
                 <h2 className="accordion-header">
                     <button className="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target={`#${uniqueId}`} aria-expanded="false" aria-controls={uniqueId}>
-                        <div className="row justify-content-around">
+                        <div className="row justify-content-around gap-5">
                             <div className="col-3 d-flex align-items-center">
                                 <div className="me-3">
                                     <b>
