@@ -40,7 +40,7 @@ export default function TripsList() {
 
                         {/* bottone toggle sorting  */}
                         <button
-                            className="btn btn-outline-primary d-flex align-items-center gap-2"
+                            className="btn btn-teal d-flex align-items-center gap-2"
                             onClick={toggleSortOrder}
                         >
                             <i className="bi bi-calendar-event"></i>
