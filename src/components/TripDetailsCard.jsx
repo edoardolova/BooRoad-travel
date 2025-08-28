@@ -29,8 +29,13 @@ export default function TripDetailsCard({ trip }) {
                             </thead>
                             <tbody className="align-middle">
                                 <tr>
-                                    <td scope="row">
-                                        {trip.destination}
+                                    <td scope="row" className="text-center">
+                                        <img
+                                            src={trip.img}
+                                            alt={trip.destination}
+                                            style={{ width: "60px", height: "60px", objectFit: "cover", borderRadius: "12px", marginBottom: "8px" }}
+                                        />
+                                        <div className="fw-bold">{trip.destination}</div>
                                     </td>
                                     <td>
                                         {trip.startDate}
