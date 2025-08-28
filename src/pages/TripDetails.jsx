@@ -15,7 +15,7 @@ export default function TripDetails() {
 
     return (
         <main className="pt-5">
-            <Jumbotron img_url={trip.img} />
+
             {trip ? (
                 <div className="container">
                     <section className="trip-details">
