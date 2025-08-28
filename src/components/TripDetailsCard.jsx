@@ -9,7 +9,7 @@ export default function TripDetailsCard({ trip }) {
                     <div className="tripDetailsTable">
                         <table className="table">
                             <thead>
-                                <tr>
+                                <tr className="text-center">
                                     <th scope="col">
                                         Destinazione
                                     </th>
@@ -26,31 +26,30 @@ export default function TripDetailsCard({ trip }) {
                                         Stato
                                     </th>
                                     <th scope="col">
-                                        Imagine
+                                        Immagine
                                     </th>
                                 </tr>
                             </thead>
                             <tbody className="align-middle">
-                                <tr>
-                                    <td scope="row" className="">
-
+                                <tr scope="row" className="text-center">
+                                    <td scope="col">
                                         <div className="fw-bold">{trip.destination}</div>
                                     </td>
-                                    <td>
+                                    <td scope="col">
                                         {trip.startDate}
                                     </td>
-                                    <td>
+                                    <td scope="col">
                                         {trip.endDate}
                                     </td>
-                                    <td>
+                                    <td scope="col">
                                         {trip.participants.length}
                                     </td>
-                                    <td>
-                                        <div className="signup-closed">
+                                    <td scope="col">
+                                        <div className="mx-auto signup-closed">
                                             Iscrizioni chiuse
                                         </div>
                                     </td>
-                                    <td>
+                                    <td scope="col">
                                         <img
                                             src={trip.img}
                                             alt={trip.destination}
