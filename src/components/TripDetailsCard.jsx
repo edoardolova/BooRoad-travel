@@ -25,17 +25,16 @@ export default function TripDetailsCard({ trip }) {
                                     <th scope="col">
                                         Stato
                                     </th>
+                                    <th scope="col">
+                                        Imagine
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody className="align-middle">
                                 <tr>
-                                    <td scope="row" className="text-center">
+                                    <td scope="row" className="">
+
                                         <div className="fw-bold">{trip.destination}</div>
-                                        <img
-                                            src={trip.img}
-                                            alt={trip.destination}
-                                            style={{ width: "150px", height: "150px", objectFit: "cover", borderRadius: "12px", marginBottom: "8px" }}
-                                        />
                                     </td>
                                     <td>
                                         {trip.startDate}
@@ -50,6 +49,13 @@ export default function TripDetailsCard({ trip }) {
                                         <div className="signup-closed">
                                             Iscrizioni chiuse
                                         </div>
+                                    </td>
+                                    <td>
+                                        <img
+                                            src={trip.img}
+                                            alt={trip.destination}
+                                            style={{ width: "100px", height: "100px", objectFit: "cover", borderRadius: "12px", marginBottom: "8px" }}
+                                        />
                                     </td>
                                 </tr>
                             </tbody>
